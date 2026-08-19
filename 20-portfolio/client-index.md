@@ -18,6 +18,6 @@ updated_at: 2026-08-11
 
 | Client ID | Client | Brain repo | Dashboard | Active paths | Software owner |
 |---|---|---|---|---|---|
-| marmareos | Marmareos | `client-marmareos-brain` | `dashboard://marmareos` | To confirm | Spatial Port |
+| marmareos | Marmareos | `client-marmareos-brain` | `dashboard://marmareos` | branding, content, paid-media, crm, software | Spatial Port |
 | thi-land | THI-LAND | `client-thi-land-brain` | `dashboard://thi-land` | To confirm | THI-LAND |
-| farmacia | Farmacia | `client-farmacia-vitalis-brain` | `dashboard://farmacia-vitalis` | To confirm | Spatial Port |
+| farmacia-vitalis | Farmacia Vitalis | `client-farmacia-vitalis-brain` | `dashboard://farmacia-vitalis` | To confirm | Spatial Port |
