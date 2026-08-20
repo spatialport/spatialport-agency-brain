@@ -19,7 +19,7 @@ updated_at: 2026-08-11
 | Client ID | Client | Brain repo | Dashboard | Active paths | Software owner |
 |---|---|---|---|---|---|
 | marmareos | Marmareos | `client-marmareos-brain` | `dashboard://marmareos` | branding, content, paid-media, crm, software | Spatial Port |
-| thi-land | THI-LAND | `client-thi-land-brain` | `dashboard://thi-land` | To confirm | THI-LAND |
+| thi-land | THI LAND (KRISTAL SA) | `client-thi-land-brain` | `dashboard://thi-land` | branding, content, crm, landing-pages, local-seo, paid-media, software | THI-LAND (exception — reconcile OKKIO art.12 vs contract art.7) |
 | farmacia-vitalis | Farmacia Vitalis | `client-farmacia-vitalis-brain` | `dashboard://farmacia-vitalis` | branding, content, paid-media, landing-pages, software | Spatial Port |
 
 ## Ventures (internal)
