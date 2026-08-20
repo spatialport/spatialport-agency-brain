@@ -490,18 +490,36 @@ Cowork plugin (skills: `brain-ingest`, `brain-query`, `client-onboard`) ·
 
 ---
 
-## 12. Open decisions (updated 2026-08-20)
+## 12. Decisions (signed off by Alex, 2026-08-20)
 
-1. ~~GitHub plan~~ **Answered: Free.** Decide: upgrade to Team vs documented fallback.
-2. ~~Spec version drift~~ **Fixed: 1.1.0 everywhere** (README bumped; mixed
-   `schema_version` values in old records tolerated, new records use 1.1.0).
-3. **Provider scope.** Which clients does the provider serve? That list is the
-   team-membership list.
-4. ~~NXTO API~~ **Answered: live**, machine identity via `x-api-key`, idempotent
-   proposals working.
-5. **Meet transcription source.** Gemini notes into Drive, or third-party tool?
-6. **Auto-merge on evidence.** Recommended yes (with daily batching) — needs Alex sign-off.
-7. **Language.** English (matches all repo artifacts). Confirmed.
-8. ~~Timestamp format~~ **Fixed: both accepted**, documented in spec README.
-9. **Provider scope model.** Recommendation on file: **fork-and-PR** (also fixes §10.2b).
-   Needs Alex sign-off.
+1. **GitHub plan — DEVIATION, signed.** No upgrade for now; colleagues work
+   **on Alex's own GitHub account**. Recorded consequences: CODEOWNERS and
+   per-person audit trail are inert (every commit reads as Alex); the
+   "acceptance = merged by Alex" control degrades to convention + CI shape
+   checks; offboarding a colleague means rotating Alex's credentials.
+   **Revisit trigger:** the first external provider seat, or the first
+   colleague working on client brains weekly — whichever comes first. At that
+   point: separate accounts + Team plan.
+2. ~~Spec version drift~~ **Fixed: 1.1.0 everywhere.**
+3. **Provider scope.** Open — list the provider's clients when the first seat
+   is granted (and see 9: it will be fork-based).
+4. ~~NXTO API~~ **Answered: live** (machine identity via `x-api-key`,
+   idempotent proposals working).
+5. **Meet transcription source.** Open — Gemini notes into Drive vs third-party.
+6. **Auto-merge on evidence — SIGNED yes**, with daily batching per client and
+   14-day canon expiry. Implemented in `brain-validate.yml` + `canon-expire.yml`.
+7. **Language.** English. Confirmed.
+8. ~~Timestamp format~~ **Fixed: both accepted.**
+9. **Provider scope model — SIGNED: fork-and-PR.** Providers never hold write
+   on origin repos; they fork, PR, and the fork access is revocable. Also
+   resolves §10.2b.
+
+### Implementation status (2026-08-20)
+
+- `brain-validate` CI: built (`playbooks/tools/brain-validate.mjs` + reusable
+  workflows), installer `playbooks/tools/install-brain-ci.sh` distributes it to
+  all five brain repos. Build item 2: **done pending install run**.
+- Evidence auto-merge + canon expiry: built into the same workflows (item §8.6).
+- `bootstrap.sh` + `ONBOARDING.md`: built in playbooks. Build item 3: **done**.
+- Remaining build items: 4 (Cowork plugin), 6-7 (ingestion), 8 (portals), 9-10
+  (subscriptions + client lane).
