@@ -3,7 +3,7 @@ id: sp-capability-landing-pages
 client_id: spatial-port
 record_type: knowledge
 service_path: landing-pages
-status: proposed
+status: accepted
 owner: alex-bellesia
 authority: alex-bellesia
 ip_owner: spatial-port
