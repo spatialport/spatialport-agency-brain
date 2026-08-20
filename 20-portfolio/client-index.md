@@ -20,4 +20,10 @@ updated_at: 2026-08-11
 |---|---|---|---|---|---|
 | marmareos | Marmareos | `client-marmareos-brain` | `dashboard://marmareos` | branding, content, paid-media, crm, software | Spatial Port |
 | thi-land | THI-LAND | `client-thi-land-brain` | `dashboard://thi-land` | To confirm | THI-LAND |
-| farmacia-vitalis | Farmacia Vitalis | `client-farmacia-vitalis-brain` | `dashboard://farmacia-vitalis` | To confirm | Spatial Port |
+| farmacia-vitalis | Farmacia Vitalis | `client-farmacia-vitalis-brain` | `dashboard://farmacia-vitalis` | branding, content, paid-media, landing-pages, software | Spatial Port |
+
+## Ventures (internal)
+
+| Venture ID | Venture | Brain repo | Dashboard | Active paths | IP owner |
+|---|---|---|---|---|---|
+| suitebox | Suitebox — smart vending per affitti brevi | `venture-suitebox-brain` | `dashboard://suitebox` | software, branding, content | Spatial Port (term-sheet ExistingCo/NewCo da riconciliare) |
